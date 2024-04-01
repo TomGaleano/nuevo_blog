@@ -1,0 +1,465 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang='es-419'><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href='//localhost:1313/favicon.ico' type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CEDO - Diario de Lau y Tomás</title>
+
+    
+
+    
+
+    
+    <meta name="author" content="Tomás" />
+    
+
+    
+        <meta property="og:title" content="CEDO" />
+<meta property="og:description" content="Resumen CEDO $1^{\text{er}}$ corte: :::danger
+Definición: Una ecuación diferencial ordinaria de primer orden es una ecuación que relaciona la primer derivada de una función $y(x)$ con la función misma y con la variable independiente. Más formalmente una $\text{EDO}$ de $1^{\text{er}}$ orden es una función $y&rsquo;=F(x,y)$. :::
+Ejemplos de $\text{EDO}$s de $1^{\text{er}}$ orden son:
+$y&rsquo;=xy-e^x$ $y&rsquo;=cos(x)&#43;x^2$ $y&rsquo;=y^3$ Una solución a una $\text{EDO}$ será una función $\phi(x)$ tal que $\phi&rsquo;(x)\equiv F(x,\phi(x))$
+Ahora, veamos un teorema importante, :::info" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="//localhost:1313/matematicas/cedo/" /><meta property="article:section" content="matematicas" />
+<meta property="article:published_time" content="2024-03-31T19:10:10-05:00" />
+<meta property="article:modified_time" content="2024-03-31T19:10:10-05:00" />
+
+    
+
+    
+        <meta name="twitter:card" content="summary"/><meta name="twitter:title" content="CEDO"/>
+<meta name="twitter:description" content="Resumen CEDO $1^{\text{er}}$ corte: :::danger
+Definición: Una ecuación diferencial ordinaria de primer orden es una ecuación que relaciona la primer derivada de una función $y(x)$ con la función misma y con la variable independiente. Más formalmente una $\text{EDO}$ de $1^{\text{er}}$ orden es una función $y&rsquo;=F(x,y)$. :::
+Ejemplos de $\text{EDO}$s de $1^{\text{er}}$ orden son:
+$y&rsquo;=xy-e^x$ $y&rsquo;=cos(x)&#43;x^2$ $y&rsquo;=y^3$ Una solución a una $\text{EDO}$ será una función $\phi(x)$ tal que $\phi&rsquo;(x)\equiv F(x,\phi(x))$
+Ahora, veamos un teorema importante, :::info"/>
+
+    <link rel="stylesheet" href="/style.css" integrity="">
+
+
+
+
+
+    
+    <script>
+        if (!('theme' in localStorage)) {
+            localStorage.theme = 'light';
+        }
+
+        if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            document.documentElement.setAttribute("data-theme", "dark");
+        } else {
+            document.documentElement.setAttribute("data-theme", "light");
+        }
+    </script>
+<script defer src="/js/header.js" integrity=""></script>
+
+
+
+    <script defer src="/js/zooming.js" integrity=""></script>
+
+
+
+
+    <script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script defer src="/js/math.js" integrity=""></script>
+
+
+
+
+
+
+    
+    
+    
+    <script defer src="/js/search-es-419.js" integrity=""></script>
+
+
+
+
+<link rel="stylesheet" href="//localhost:1313/user.css">
+</head>
+<body>
+        <main><header>
+    <div class="brand">
+        <div id="sidebar_btn">
+            <svg id="menu_icon" width="26px" height="26px" viewBox="0 0 24 24">
+<svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="24" height="24" viewBox="0 0 24 24" fill="none"
+    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+    stroke-linejoin="round">
+    <line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line>
+</svg>
+
+</svg>
+        </div>
+
+        <div>
+            <a href="/">Diario de Lau y Tomás</a>
+        </div>
+    </div>
+
+    <div class="toolbox">
+        <div id="theme_tool">
+            <svg id="dark_mode_btn" class="toolbox-btn" width="18px" height="18px" viewBox="0 0 24 24">
+<svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="24" height="24" viewBox="0 0 24 24" fill="none"
+    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+    stroke-linejoin="round">
+    <circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+</svg>
+
+</svg>
+            <svg id="light_mode_btn" class="toolbox-btn" width="18px" height="18px" viewBox="0 0 24 24">
+<svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="24" height="24" viewBox="0 0 24 24" fill="none"
+    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+    stroke-linejoin="round">
+    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+</svg>
+
+</svg>
+        </div>
+
+        
+            <div id="search_tool">
+                <svg id="search_btn" class="toolbox-btn" width="18px" height="18px" viewBox="0 0 24 24">
+<svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="24" height="24" viewBox="0 0 24 24" fill="none"
+    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+    stroke-linejoin="round">
+    <circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+</svg>
+
+</svg><div id="search_menu_wrapper" class="hidden">
+    <div id="search_menu">
+        <div id="search_menu_toolbar">
+            <div id="search_menu_input_wrapper">
+                <input id="search_menu_input" type="text" placeholder='Search Posts'>
+            </div>
+            <div id="search_menu_close_btn">
+                <svg width="18px" height="18px" viewBox="0 0 24 24">
+<svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="24" height="24" viewBox="0 0 24 24" fill="none"
+    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+    stroke-linejoin="round">
+    <line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line>
+</svg>
+
+</svg>
+            </div>
+        </div>
+        <div id="search_menu_results">
+        </div>
+    </div>
+</div>
+</div>
+        
+
+        
+    </div>
+</header>
+<nav id="navbar" class="pure-menu">
+    <ul class="pure-menu-list"><li class="navbar-item pure-menu-item ">
+                    
+                        <a href="/ciencia/" class="pure-menu-link">ciencia</a>
+                    
+                </li><li class="navbar-item pure-menu-item ">
+                    
+                        <a href="/citas/" class="pure-menu-link">citas</a>
+                    
+                </li><li class="navbar-item pure-menu-item ">
+                    
+                        <a href="/acerca-de-nosotros/" class="pure-menu-link">acerca de nosotros</a>
+                    
+                </li></ul>
+</nav>
+<div id="sidebar_canvas_overlay" class="hidden"></div>
+<div id="sidebar" class="close">
+    <ul><li>
+                    <a href="/ciencia/">ciencia</a>
+                </li><li>
+                    <a href="/citas/">citas</a>
+                </li><li>
+                    <a href="/acerca-de-nosotros/">acerca de nosotros</a>
+                </li></ul>
+</div><div id="content" class="content-margin">
+                
+    
+    <div class="collapsible-menu-wrapper"><div class="collapsible-menu-type"><span>Table of contents</span></div><div class="collapsible-menu">
+        
+            <nav id="TableOfContents">
+  <ul>
+    <li><a href="#definición">Definición:</a></li>
+    <li><a href="#teorema-de-existencia-y-unicidad-para-primer-orden">Teorema de existencia y unicidad para primer orden:</a></li>
+    <li><a href="#variables-separables">Variables separables:</a></li>
+    <li><a href="#ecuaciones-exactas">Ecuaciones exactas:</a></li>
+    <li><a href="#ecuaciones-lineales">Ecuaciones lineales:</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#homogéneas">Homogéneas:</a></li>
+    <li><a href="#coeficientes-lineales">Coeficientes lineales</a>
+      <ul>
+        <li><a href="#si-a_1b_2a_2b_1">Si $a_1b_2=a_2b_1$:</a></li>
+        <li><a href="#si-c_10c_2">Si $c_1=0=c_2$</a></li>
+        <li><a href="#si-a_1b_2neq-a_2b_1">Si $a_1b_2\neq a_2b_1$</a></li>
+      </ul>
+    </li>
+    <li><a href="#ecuación-de-bernoulli">Ecuación de Bernoulli</a></li>
+    <li><a href="#ecuación-de-ricatti">Ecuación de Ricatti:</a></li>
+    <li><a href="#ecuación-de-lagrange">Ecuación de Lagrange:</a></li>
+  </ul>
+
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#son-de-la-forma">Son de la forma</a></li>
+      </ul>
+    </li>
+    <li><a href="#teorema-de-existencia-y-unicidad-para-órdenes-superiores">Teorema de existencia y unicidad para órdenes superiores:</a>
+      <ul>
+        <li><a href="#nota">Nota:</a></li>
+        <li><a href="#teorema">Teorema:</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+        
+    </div></div>
+
+
+
+    <div class="content-margin">
+
+
+
+<article class="line-numbers">
+    
+    
+    <h1 id="resumen-cedo-1texter-corte">Resumen CEDO $1^{\text{er}}$ corte:</h1>
+<p>:::danger</p>
+<h2 id="definición">Definición:</h2>
+<p>Una <strong>ecuación diferencial ordinaria de primer orden</strong> es una ecuación que relaciona la primer derivada de una función $y(x)$ con la función misma y con la variable independiente. Más formalmente una $\text{EDO}$ de $1^{\text{er}}$ orden es una función $y&rsquo;=F(x,y)$.
+:::</p>
+<p>Ejemplos de $\text{EDO}$s de $1^{\text{er}}$ orden son:</p>
+<ul>
+<li>$y&rsquo;=xy-e^x$</li>
+<li>$y&rsquo;=cos(x)+x^2$</li>
+<li>$y&rsquo;=y^3$</li>
+</ul>
+<p>Una solución a una $\text{EDO}$ será una función $\phi(x)$ tal que $\phi&rsquo;(x)\equiv F(x,\phi(x))$</p>
+<p>Ahora, veamos un teorema importante,
+:::info</p>
+<h2 id="teorema-de-existencia-y-unicidad-para-primer-orden">Teorema de existencia y unicidad para primer orden:</h2>
+<p>Si las funciones $F(x,y)$ y $\frac{\partial F}{\partial y}$ son continuas en un rectángulo $a&lt;x&lt;b,\ c&lt;y&lt;d$ que contenga al punto $(x_0,y_0)$. Entonces en algún intervalo $x_0-h&lt;x&lt;x_0$ existe una única función $\phi(x)$ tal que $\phi&rsquo;(x)\equiv F(x,\phi(x))$ y $\phi(x_0)=y_0$.
+:::</p>
+<p>Esto nos permite resolver problemas de valor inicial ($\text{PVI}$).</p>
+<p>Dependiendo del tipo de ecuación que tratemos, habrán metodos de resolución diferentes. Aquí están las clases más importantes:</p>
+<h2 id="variables-separables">Variables separables:</h2>
+<p>Tienen la forma general</p>
+<p>$$ y&rsquo;=\frac{f(x)}{g(y)}$$</p>
+<p>Y para resolverlos, primero debemos dejar la ecuación como</p>
+<p>$$ g(y)y&rsquo;=f(x) $$</p>
+<p>El siguiente paso involucra integrar a ambos lados con respecto $x$ y usar la notación de Lebesgue</p>
+<p>$$\int g(y)\frac{dy}{dx}dx=\int f(x)dx$$</p>
+<p>Por la regla de la cadena, esto es</p>
+<p>$$\int g(y)dy=\int f(x)dx$$</p>
+<p>Y así, al despejar $y$, obtendremos la familia de soluciones a la $\text{EDO}$. Para $\text{PVI}$ se va a tener que</p>
+<p>$$\int^{\phi(x)}<em>{y_0} g(y)dy=\int^x</em>{x_0} f(x)dx$$</p>
+<p>Va a ser la solución.</p>
+<h2 id="ecuaciones-exactas">Ecuaciones exactas:</h2>
+<p>Tienen la forma general</p>
+<p>$$M(x,y)dx+N(x,y)dy=0$$</p>
+<p>Donde además se cumpla que</p>
+<p>$$\frac{\partial M}{\partial y}=\frac{\partial N}{\partial x}$$</p>
+<p>En base a la fundamentación teórica que existe una función solución con la forma</p>
+<p>$$dF=Mdx+Ndy$$</p>
+<p>Así, podemos elegir integrar ya sea con respecto a $x$ (o $y$) para llegar a</p>
+<p>$$F(x,y)=\int M(x,y)dx+C(y)$$</p>
+<p>Donde asumimos que $C(y)$ es una constante de integración que puede depender de $y$, necesitamos despejar $g(y)$ para tener completamente a $F(x,y)$ por lo que</p>
+<p>$$\begin{align*}
+C(y)=F(x,y)-\int M(x,y)dx
+\end{align*}$$</p>
+<p>Derivando parcialmente con respecto a $y$ tenemos</p>
+<p>$$\begin{align*}
+C&rsquo;(y)&amp;=\frac{\partial F(x,y)-\int M(x,y)dx}{\partial y}\
+&amp;=\frac{\partial F(x,y)}{\partial y}-\frac{\partial \int M(x,y)dx}{\partial y}\
+&amp;=N(x,y)-\frac{\partial \int M(x,y)dx}{\partial y}
+\end{align*}$$</p>
+<p>Por lo que</p>
+<p>$$C(y)=\int\left[ N(x,y)-\frac{\partial \int M(x,y)dx}{\partial y}\right] dy$$</p>
+<p>La función solución a la $\text{EDO}$ es entonces</p>
+<p>$$F(x,y)=K$$</p>
+<p>Para algún $K$ definido por un $\text{PVI}$.</p>
+<h2 id="ecuaciones-lineales">Ecuaciones lineales:</h2>
+<p>Son de la forma</p>
+<p>$$a(x)y&rsquo;+b(x)y+c(x)=0$$</p>
+<p>Donde podemos despejar $y&rsquo;$ como</p>
+<p>$$y&rsquo;+\left(\frac{b}{a}\right)(x)y=-\left(\frac{c}{a}\right)(x)$$</p>
+<p>Simplificando notación</p>
+<p>$$y&rsquo;+P(x)y=Q(x)$$</p>
+<p>Y cuya solución es de la forma</p>
+<p>$$y=\frac{1}{\mu(x)}\left[\int\mu(x)Q(x)dx+c\right]$$</p>
+<p>Donde</p>
+<p>$$\mu(x)=e^{\int P(x)dx}$$</p>
+<p>En $\text{PVI}$ se tiene que</p>
+<p>$$\mu(x)=e^{\int^x_{x_0}P(x)dx},\ y(x)=\frac{1}{\mu(x)}\left[y_0+\int^x_{x_0}\mu(x)Q(x)dx\right]$$</p>
+<h1 id="sustituciones-y-ecuaciones-especiales">Sustituciones y ecuaciones especiales:</h1>
+<h2 id="homogéneas">Homogéneas:</h2>
+<p>Si se tiene una una función $y&rsquo;=F(x,y)$ que se puede reescribir de la forma</p>
+<p>$$y&rsquo;=r(1,\frac{y}{x})$$</p>
+<p>Entonces se puede hacer la sustitución $u=\frac{y}{x}$ donde $y&rsquo;=u+xu&rsquo;$. Tenemos la ecuación</p>
+<p>$$u+xu&rsquo;=r(1,u)$$</p>
+<p>Que es de variables separables</p>
+<h2 id="coeficientes-lineales">Coeficientes lineales</h2>
+<p>Son de la forma</p>
+<p>$$(a_1x+b_1y+c_1)dx+(a_2+b_2+c_2)dy=0$$</p>
+<p>Donde trataremos 3 casos individuales</p>
+<h3 id="si-a_1b_2a_2b_1">Si $a_1b_2=a_2b_1$:</h3>
+<p>Podemos reescribir la ecuación a</p>
+<p>$$y&rsquo;=a\frac{x+by+d_1}{x+by+d_2}$$</p>
+<p>Dado $a=-\frac{a_1}{a_2},\ b=\frac{b_1}{a_1}=\frac{b_2}{a_2}$ y $d_i=\frac{c_i}{a_i}$. El cambio de variable $u=x+by$ permite</p>
+<p>$$\frac{1}{b}(u&rsquo;-1)=a\frac{u+d_1}{u+d_2}$$</p>
+<p>Que es de variables separables.</p>
+<h3 id="si-c_10c_2">Si $c_1=0=c_2$</h3>
+<p>Reescribimos la ecuación como</p>
+<p>$$\begin{align*}
+y&rsquo;&amp;=-\frac{a_1x+b_1y}{a_2x+b_2y}\
+&amp;=-\frac{a_1+b_1\frac{y}{x}}{a_2+b_2\frac{y}{x}}
+\end{align*}$$</p>
+<p>Donde podemos aplicar la técnica de las ecuaciones homogéneas.</p>
+<h3 id="si-a_1b_2neq-a_2b_1">Si $a_1b_2\neq a_2b_1$</h3>
+<p>Primero debemos el siguiente sistema de ecuaciones</p>
+<p>$$ \begin{pmatrix}a_{1}&amp;b_{1}\a_{2}&amp;b_{2}\end{pmatrix}\cdot\begin{pmatrix}x\y\end{pmatrix}=\begin{pmatrix}c_1\c_2\end{pmatrix}$$</p>
+<p>Como $a_1b_2-a_2b_1\neq0$ sabemos que el determinante de la matriz de coeficientes es distinto de 0 y por tanto, existe una solución al sistema $x=h$ y $y=k$, por lo que podemos hacer la sustición</p>
+<p>$$x=u+h,\ y=v+k,\ \frac{dy}{dx}=\frac{dv}{du}$$</p>
+<p>Que realmente solo es una traslación del plano, así</p>
+<p>$$\begin{align*}
+\frac{dv}{du}&amp;=-\frac{a_1(u+h)+b_1(v+k)+c_1}{a_2(u+h)+b_2(v+k)+c_2}\
+&amp;=-\frac{a_1u+b_1v+a_1h+b_1k+c_1}{a_2u+b_2v+a_2h+b_2k+c_2}\
+&amp;=-\frac{a_1u+b_1v}{a_2u+b_2v}
+\end{align*}$$</p>
+<p>Donde podemos aplicar la técnica del caso anterior.</p>
+<h2 id="ecuación-de-bernoulli">Ecuación de Bernoulli</h2>
+<p>Es de la forma</p>
+<p>$$y&rsquo;+P(x)y=Q(x)y^n$$</p>
+<p>Y se puede solucionar con la sustitución</p>
+<p>$$u=y^{1-n},\ u&rsquo;=(1-n)y^{-n}y&rsquo;$$</p>
+<p>Reemplazando tenemos</p>
+<p>$$\frac{y^n}{1-n}u&rsquo;+P(x)y=Q(x)y^n$$</p>
+<p>Dividiendo por $y^n$</p>
+<p>$$\frac{1}{1-n}u&rsquo;+P(x)y^{1-n}=Q(x)$$</p>
+<p>Esto es</p>
+<p>$$\frac{1}{1-n}u&rsquo;+P(x)u=Q(x)$$</p>
+<p>Una ecuación lineal al multiplicar por $(1-n)$.</p>
+<h2 id="ecuación-de-ricatti">Ecuación de Ricatti:</h2>
+<p>Es de la forma</p>
+<p>$$y&rsquo;=P(x)+Q(x)y+R(x)y^2$$</p>
+<p>Y la podemos resolver sii conocemos una solución particular</p>
+<p>$$y_1&rsquo;\equiv P(x)+Q(x)y_1+R(x)y_1^2$$</p>
+<p>Empezamos planteando la sustitución</p>
+<p>$$y=y_1+u,\ y&rsquo;=y_1&rsquo;+u&rsquo;$$</p>
+<p>Donde, reemplazando en la ecuación inicial tenemos</p>
+<p>$$y_1&rsquo;+u&rsquo;=P(x)+Q(x)(y_1+u)+R(x)(y_1+u)^2$$</p>
+<p>Desarrollando</p>
+<p>$$y_1&rsquo;+u&rsquo;=P(x)+Q(x)y_1+Q(x)u+R(x)y_1^2+2R(x)y_1u+R(x)u^2$$</p>
+<p>Usando que $y_1$ es una solución a la $\text{EDO}$</p>
+<p>$$\begin{align*}
+u&rsquo;&amp;=Q(x)u+2R(x)y_1u+R(x)u^2\
+&amp;=\left[Q(x)+2R(x)y_1\right]u+R(x)u^2
+\end{align*}$$</p>
+<p>Que es una ecuacion de Bernoulli con $n=2$.</p>
+<h2 id="ecuación-de-lagrange">Ecuación de Lagrange:</h2>
+<p>Es de la forma</p>
+<p>$$y=g(y&rsquo;)x+f(y&rsquo;)$$</p>
+<p>La idea es parametrizar la función con una sustitución $y&rsquo;=p$</p>
+<p>$$y=g(p)x+f(p)$$</p>
+<p>Derivando con respecto a $y$</p>
+<p>$$p=g&rsquo;(p)p&rsquo;x+f&rsquo;(p)p&rsquo;$$</p>
+<p>Podemos plantear $x$ en términos de $p$ como</p>
+<p>$$\frac{dx}{dp}-\frac{g&rsquo;(p)}{p-g(p)}x=\frac{f&rsquo;(p)}{p-g(p)}$$</p>
+<p>Una ecuación lineal que se resuelve dando lugar a una nueva $h(x,p)$ tal que</p>
+<p>$$h(x,p)=x(p)=\frac{1}{e^{\int-\frac{g&rsquo;(p)}{p-g(p)}dp}}\left[\int(e^{\int-\frac{g&rsquo;(p)}{p-g(p)}dp}))\frac{f&rsquo;(p)}{p-g(p)}+C\right]$$</p>
+<p>De lo que sigue</p>
+<p>$$y(p)=g(p)x(p)+f(p)$$</p>
+<p>Y la solución es una curva de la forma
+$$y=g(p)x+f(p)$$</p>
+<p>$$(x(p),y(p))$$</p>
+<p>Las aplicaciones son para ingenieros, por tanto, las omito.</p>
+<h1 id="textedos-lineales-de-orden-superior">$\text{EDOs}$ lineales de orden superior</h1>
+<h3 id="son-de-la-forma">Son de la forma</h3>
+<p>$$a_n(x)y^{(n)}+a_{n-1}(x)y^{(n-1)}+&hellip;+a_1(x)y&rsquo;+a_0(x)y=g(x)$$</p>
+<ul>
+<li>Tenemos que si $g(x)\equiv0$, no hay variables libres $x$ y por tanto se denomina <strong>homogénea</strong>.</li>
+<li>Si $a_i(x)\equiv a_i\in\mathbb{R},\ 0\leq i \leq n$, es decir, las derivadas de $y$ tienen coeficientes reales, decimos que la ecuación lineal es de <strong>coeficientes constantes</strong>.</li>
+</ul>
+<p>:::info</p>
+<h2 id="teorema-de-existencia-y-unicidad-para-órdenes-superiores">Teorema de existencia y unicidad para órdenes superiores:</h2>
+<p>Sea una $\text{EDO}$ lineal y de orden $n$ de la forma</p>
+<p>$$a_n(x)y^{(n)}+a_{n-1}(x)y^{(n-1)}+&hellip;+a_1(x)y&rsquo;+a_0(x)y=g(x)$$</p>
+<p>Donde $g(x),a_n(x),&hellip;,a_0(x)\in C^1(a,b)$ tal que $x_0\in(a,b)$. Entonces para cualesquiera valores iniciales $y_i,\ 0\leq i&lt;n$, existe una única solución $\phi(x)$ en el intervalo que suple
+$$y^{(i)}(x_0)=y_i,\ 0\leq i&lt;n$$</p>
+<h3 id="nota">Nota:</h3>
+<p>No se garantiza que la solución $\phi(x)$ sea única en todo el dominio de la ecuación, en cambio se dice que todas las curvas que pasan por $x_0$ tienen un comportamiento idéntico en $(a,b)$ :).
+:::</p>
+<p>:::info</p>
+<h3 id="teorema">Teorema:</h3>
+<p>Sea una $\text{EDO}$ lineal, homogénea y de orden $n$. Si $\phi(x)$ es una solución, entonces $\alpha\phi(x)$ es también una solución para todo $\alpha\in\mathbb{R}$.</p>
+<p>:::spoiler <em>Demostración:</em>
+Por la hipótesis, tenemos que la $\text{EDO}$ es de la forma
+$$a_n(x)y^{(n)}+a_{n-1}(x)y^{(n-1)}+&hellip;+a_1(x)y&rsquo;+a_0(x)y=0$$</p>
+<p>Usando que $\phi(x)$ es solución, sabemos que
+$$a_n(x)\phi^{(n)}(x)+a_{n-1}(x)\phi^{(n-1)}(x)+&hellip;+a_1(x)\phi&rsquo;(x)+a_0(x)\phi(x)\equiv0$$</p>
+<p>Ahora vemos el caso $\alpha\phi(x),\ \alpha\in\mathbb{R}$
+$$F(x,\alpha\phi(x))=\sum_{i=0}^na_i(x)[\alpha\phi]^{(i)}(x)$$</p>
+<p>Usando que la derivada es un operador lineal, tenemos
+$$F(x,\alpha\phi(x))=\sum_{i=0}^na_i(x)\alpha\phi^{(i)}(x)$$</p>
+<p>Factorizando $\alpha$,
+$$\begin{align*}
+F(x,\alpha\phi(x))&amp;=\alpha\left[\sum_{i=0}^na_i(x)\phi^{(i)}(x)\right]\
+&amp;=\alpha[F(x,\phi(x))]\
+&amp;=\alpha\cdot 0\
+&amp;\equiv0
+\end{align*}$$</p>
+<p>Luego concluimos $\alpha\phi(x)$ también es solución para $\alpha\in\mathbb{R}$.
+:::
+Por este mismo argumento también podemos demostrar que la suma de dos soluciones $\phi_1(x)+\phi_2(x)=\phi_3(x)$ tambien es una solución de una $\text{EDO}$ homogénea de orden $n$. Luego tenemos que el conjunto de todas las soluciones de una $\text{EDO}$ de este tipo es un grupo con respecto a la suma, más aún parece ser un espacio vectorial.</p>
+
+</article>
+</div>
+
+
+                
+                    
+                
+            </div>
+<footer>
+    <article>Desarrollado por Tomás</article>
+</footer>
+
+</main>
+    </body>
+</html>

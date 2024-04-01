@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>//localhost:1313/ciencia/</loc>
+    <lastmod>2024-03-31T19:58:30-05:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/ciencia/matematicas/entradas/cedo/</loc>
+    <lastmod>2024-03-31T19:10:10-05:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/ciencia/quimica/test/</loc>
+    <lastmod>2024-03-31T19:10:10-05:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/citas/</loc>
+    <lastmod>2024-03-31T19:07:54-05:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/matematicas/</loc>
+    <lastmod>2024-03-31T19:07:54-05:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/quimica/</loc>
+    <lastmod>2024-03-31T19:07:54-05:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/acerca-de-nosotros/</loc>
+    <lastmod>2024-03-31T17:40:06-05:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/posts/ecuaciones/</loc>
+    <lastmod>2024-03-31T17:33:52-05:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/posts/</loc>
+    <lastmod>2024-03-31T17:33:52-05:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/categories/</loc>
+  </url><url>
+    <loc>//localhost:1313/tags/</loc>
+  </url>
+</urlset>

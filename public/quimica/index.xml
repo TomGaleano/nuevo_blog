@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Química on Diario de Lau y Tomás</title>
+    <link>//localhost:1313/quimica/</link>
+    <description>Recent content in Química on Diario de Lau y Tomás</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>es-419</language>
+    <lastBuildDate>Sun, 31 Mar 2024 19:07:54 -0500</lastBuildDate><atom:link href="//localhost:1313/quimica/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>TEST</title>
+      <link>//localhost:1313/ciencia/quimica/test/</link>
+      <pubDate>Sun, 31 Mar 2024 19:10:10 -0500</pubDate>
+      
+      <guid>//localhost:1313/ciencia/quimica/test/</guid>
+      <description>La molécula de agua es $H_2O$ </description>
+    </item>
+    
+  </channel>
+</rss>

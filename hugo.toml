@@ -1,0 +1,30 @@
+baseURL = ''
+languageCode = 'es-419'
+title = 'Diario de Lau y Tomás'
+theme = "hugo-theme-monochrome"
+
+[params]
+navbar_title = "Diario de Lau y Tomás"
+footer = "Desarrollado por Tomás"
+enable_math = true
+enable_site_search = true
+author = "Tomás"
+
+[[menu.navbar]]
+identifier = "acerca de nosotros"
+name = "acerca de nosotros"
+title = "acerca de nosotros"
+url = "/acerca-de-nosotros/"
+weight = 100
+
+[[menu.navbar]]
+identifier = "ciencia"
+name = "ciencia"
+url = "/ciencia/"
+weight = -100
+
+[[menu.navbar]]
+identifier = "citas"
+name = "citas"
+url = "/citas/"
+weight = 80

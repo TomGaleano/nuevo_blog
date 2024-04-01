@@ -11,6 +11,6 @@ con el propósito de documentar parte de nuestros conocimientos
 académicos y personales en un blog.
 
 Nuestro objetivo es compartir este conocimiento de una manera sencilla
-y digerible para cualquier persona "<3".
+y digerible para cualquier persona ´<3´.
 
 ## Entradas más recientes

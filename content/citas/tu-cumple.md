@@ -65,5 +65,5 @@ Creo que ver nuestras conversaciones como datos nos ayuda a entender cómo funci
 Te amo mucho mi amor, feliz cumpleaños. Estoy ansioso de poder hacer el resumen de nuestras conversaciones dentro de un año.
 
 Por último, un diagrama con las palabras que más usamos al comunicarnos.
-![Corazoncito](/heart.png)
+![Corazoncito](https://raw.githubusercontent.com/TomGaleano/nuevo_blog/main/public/heart.png)
 

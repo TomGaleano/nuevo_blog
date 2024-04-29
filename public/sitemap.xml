@@ -2,6 +2,12 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>//localhost:1313/citas/tu-cumple/</loc>
+    <lastmod>2024-04-29T10:04:22-05:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/</loc>
+    <lastmod>2024-03-31T20:30:32-05:00</lastmod>
+  </url><url>
     <loc>//localhost:1313/ciencia/</loc>
     <lastmod>2024-03-31T19:58:30-05:00</lastmod>
   </url><url>

@@ -1,0 +1,7 @@
+"tags" = "Etiquetas"
+"recent_posts" = "Entradas recientes"
+"toc" = "Tabla de contenidos:"
+"no_page_under_resouces" = 'There is no page under {{ .resources_path }}. You need to specify "{{ .resources_name }}" correctly and check the existence of posts under this folder.'
+"resources_not_found" = 'No encontramos nada al respecto. Debes especificar "{{ .resources_name }}" correctamente.'
+"search" = "Buscar entradas"
+"changelogs" = "Actualizaciones"

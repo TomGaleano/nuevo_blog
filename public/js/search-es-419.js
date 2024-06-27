@@ -61,8 +61,7 @@
             }, n(e3);
           }
           function r(e3, t3) {
-            if (!(e3 instanceof t3))
-              throw new TypeError("Cannot call a class as a function");
+            if (!(e3 instanceof t3)) throw new TypeError("Cannot call a class as a function");
           }
           function i(e3, t3) {
             for (var n2 = 0; n2 < t3.length; n2++) {
@@ -77,8 +76,7 @@
             return t3 in e3 ? Object.defineProperty(e3, t3, { value: n2, enumerable: true, configurable: true, writable: true }) : e3[t3] = n2, e3;
           }
           function a(e3, t3) {
-            if ("function" != typeof t3 && null !== t3)
-              throw new TypeError("Super expression must either be null or a function");
+            if ("function" != typeof t3 && null !== t3) throw new TypeError("Super expression must either be null or a function");
             Object.defineProperty(e3, "prototype", { value: Object.create(t3 && t3.prototype, { constructor: { value: e3, writable: true, configurable: true } }), writable: false }), t3 && u(e3, t3);
           }
           function s(e3) {
@@ -92,24 +90,18 @@
             }, u(e3, t3);
           }
           function h(e3, t3) {
-            if (t3 && ("object" == typeof t3 || "function" == typeof t3))
-              return t3;
-            if (void 0 !== t3)
-              throw new TypeError("Derived constructors may only return object or undefined");
+            if (t3 && ("object" == typeof t3 || "function" == typeof t3)) return t3;
+            if (void 0 !== t3) throw new TypeError("Derived constructors may only return object or undefined");
             return function(e4) {
-              if (void 0 === e4)
-                throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
+              if (void 0 === e4) throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
               return e4;
             }(e3);
           }
           function l(e3) {
             var t3 = function() {
-              if ("undefined" == typeof Reflect || !Reflect.construct)
-                return false;
-              if (Reflect.construct.sham)
-                return false;
-              if ("function" == typeof Proxy)
-                return true;
+              if ("undefined" == typeof Reflect || !Reflect.construct) return false;
+              if (Reflect.construct.sham) return false;
+              if ("function" == typeof Proxy) return true;
               try {
                 return Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function() {
                 })), true;
@@ -122,22 +114,18 @@
               if (t3) {
                 var i2 = s(this).constructor;
                 n2 = Reflect.construct(r2, arguments, i2);
-              } else
-                n2 = r2.apply(this, arguments);
+              } else n2 = r2.apply(this, arguments);
               return h(this, n2);
             };
           }
           function f(e3) {
             return function(e4) {
-              if (Array.isArray(e4))
-                return d(e4);
+              if (Array.isArray(e4)) return d(e4);
             }(e3) || function(e4) {
-              if ("undefined" != typeof Symbol && null != e4[Symbol.iterator] || null != e4["@@iterator"])
-                return Array.from(e4);
+              if ("undefined" != typeof Symbol && null != e4[Symbol.iterator] || null != e4["@@iterator"]) return Array.from(e4);
             }(e3) || function(e4, t3) {
               if (e4) {
-                if ("string" == typeof e4)
-                  return d(e4, t3);
+                if ("string" == typeof e4) return d(e4, t3);
                 var n2 = Object.prototype.toString.call(e4).slice(8, -1);
                 return "Object" === n2 && e4.constructor && (n2 = e4.constructor.name), "Map" === n2 || "Set" === n2 ? Array.from(e4) : "Arguments" === n2 || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n2) ? d(e4, t3) : void 0;
               }
@@ -147,8 +135,7 @@
           }
           function d(e3, t3) {
             (null == t3 || t3 > e3.length) && (t3 = e3.length);
-            for (var n2 = 0, r2 = new Array(t3); n2 < t3; n2++)
-              r2[n2] = e3[n2];
+            for (var n2 = 0, r2 = new Array(t3); n2 < t3; n2++) r2[n2] = e3[n2];
             return r2;
           }
           function v(e3) {
@@ -203,18 +190,15 @@
           }();
           function _(e3) {
             var t3 = null, n2 = null, r2 = null, i2 = 1, o2 = null;
-            if (g(e3) || v(e3))
-              r2 = e3, t3 = O(e3), n2 = j(e3);
+            if (g(e3) || v(e3)) r2 = e3, t3 = O(e3), n2 = j(e3);
             else {
-              if (!L.call(e3, "name"))
-                throw new Error(function(e4) {
-                  return "Missing ".concat(e4, " property in key");
-                }("name"));
+              if (!L.call(e3, "name")) throw new Error(function(e4) {
+                return "Missing ".concat(e4, " property in key");
+              }("name"));
               var c2 = e3.name;
-              if (r2 = c2, L.call(e3, "weight") && (i2 = e3.weight) <= 0)
-                throw new Error(function(e4) {
-                  return "Property 'weight' in key '".concat(e4, "' must be a positive integer");
-                }(c2));
+              if (r2 = c2, L.call(e3, "weight") && (i2 = e3.weight) <= 0) throw new Error(function(e4) {
+                return "Property 'weight' in key '".concat(e4, "' must be a positive integer");
+              }(c2));
               t3 = O(c2), n2 = j(c2), o2 = e3.getFn;
             }
             return { path: t3, id: n2, weight: i2, src: r2, getFn: o2 };
@@ -228,28 +212,21 @@
           var A = { useExtendedSearch: false, getFn: function(e3, t3) {
             var n2 = [], r2 = false;
             return function e4(t4, i2, o2) {
-              if (k(t4))
-                if (i2[o2]) {
-                  var c2 = t4[i2[o2]];
-                  if (!k(c2))
-                    return;
-                  if (o2 === i2.length - 1 && (g(c2) || y(c2) || p(c2)))
-                    n2.push(function(e5) {
-                      return null == e5 ? "" : function(e6) {
-                        if ("string" == typeof e6)
-                          return e6;
-                        var t5 = e6 + "";
-                        return "0" == t5 && 1 / e6 == -1 / 0 ? "-0" : t5;
-                      }(e5);
-                    }(c2));
-                  else if (v(c2)) {
-                    r2 = true;
-                    for (var a2 = 0, s2 = c2.length; a2 < s2; a2 += 1)
-                      e4(c2[a2], i2, o2 + 1);
-                  } else
-                    i2.length && e4(c2, i2, o2 + 1);
-                } else
-                  n2.push(t4);
+              if (k(t4)) if (i2[o2]) {
+                var c2 = t4[i2[o2]];
+                if (!k(c2)) return;
+                if (o2 === i2.length - 1 && (g(c2) || y(c2) || p(c2))) n2.push(function(e5) {
+                  return null == e5 ? "" : function(e6) {
+                    if ("string" == typeof e6) return e6;
+                    var t5 = e6 + "";
+                    return "0" == t5 && 1 / e6 == -1 / 0 ? "-0" : t5;
+                  }(e5);
+                }(c2));
+                else if (v(c2)) {
+                  r2 = true;
+                  for (var a2 = 0, s2 = c2.length; a2 < s2; a2 += 1) e4(c2[a2], i2, o2 + 1);
+                } else i2.length && e4(c2, i2, o2 + 1);
+              } else n2.push(t4);
             }(e3, g(t3) ? t3.split(".") : t3, 0), r2 ? n2 : n2[0];
           }, ignoreLocation: false, ignoreFieldNorm: false, fieldNormWeight: 1 }, I = t2(t2(t2(t2({}, { isCaseSensitive: false, includeScore: false, keys: [], shouldSort: true, sortFn: function(e3, t3) {
             return e3.score === t3.score ? e3.idx < t3.idx ? -1 : 1 : e3.score < t3.score ? -1 : 1;
@@ -258,8 +235,7 @@
             var e3 = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : 1, t3 = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : 3, n2 = /* @__PURE__ */ new Map(), r2 = Math.pow(10, t3);
             return { get: function(t4) {
               var i2 = t4.match(C).length;
-              if (n2.has(i2))
-                return n2.get(i2);
+              if (n2.has(i2)) return n2.get(i2);
               var o2 = 1 / Math.pow(i2, 0.5 * e3), c2 = parseFloat(Math.round(o2 * r2) / r2);
               return n2.set(i2, c2), c2;
             }, clear: function() {
@@ -294,8 +270,7 @@
               g(e4) ? this._addString(e4, t3) : this._addObject(e4, t3);
             } }, { key: "removeAt", value: function(e4) {
               this.records.splice(e4, 1);
-              for (var t3 = e4, n2 = this.size(); t3 < n2; t3 += 1)
-                this.records[t3].i -= 1;
+              for (var t3 = e4, n2 = this.size(); t3 < n2; t3 += 1) this.records[t3].i -= 1;
             } }, { key: "getValueForItemAtKeyId", value: function(e4, t3) {
               return e4[this._keysMap[t3]];
             } }, { key: "size", value: function() {
@@ -310,21 +285,18 @@
               this.keys.forEach(function(t4, i2) {
                 var o2 = t4.getFn ? t4.getFn(e4) : n2.getFn(e4, t4.path);
                 if (k(o2)) {
-                  if (v(o2))
-                    !function() {
-                      for (var e5 = [], t5 = [{ nestedArrIndex: -1, value: o2 }]; t5.length; ) {
-                        var c3 = t5.pop(), a2 = c3.nestedArrIndex, s2 = c3.value;
-                        if (k(s2))
-                          if (g(s2) && !M(s2)) {
-                            var u2 = { v: s2, i: a2, n: n2.norm.get(s2) };
-                            e5.push(u2);
-                          } else
-                            v(s2) && s2.forEach(function(e6, n3) {
-                              t5.push({ nestedArrIndex: n3, value: e6 });
-                            });
-                      }
-                      r2.$[i2] = e5;
-                    }();
+                  if (v(o2)) !function() {
+                    for (var e5 = [], t5 = [{ nestedArrIndex: -1, value: o2 }]; t5.length; ) {
+                      var c3 = t5.pop(), a2 = c3.nestedArrIndex, s2 = c3.value;
+                      if (k(s2)) if (g(s2) && !M(s2)) {
+                        var u2 = { v: s2, i: a2, n: n2.norm.get(s2) };
+                        e5.push(u2);
+                      } else v(s2) && s2.forEach(function(e6, n3) {
+                        t5.push({ nestedArrIndex: n3, value: e6 });
+                      });
+                    }
+                    r2.$[i2] = e5;
+                  }();
                   else if (g(o2) && !M(o2)) {
                     var c2 = { v: o2, n: n2.norm.get(o2) };
                     r2.$[i2] = c2;
@@ -341,8 +313,7 @@
           }
           function R(e3) {
             var t3 = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {}, n2 = t3.errors, r2 = void 0 === n2 ? 0 : n2, i2 = t3.currentLocation, o2 = void 0 === i2 ? 0 : i2, c2 = t3.expectedLocation, a2 = void 0 === c2 ? 0 : c2, s2 = t3.distance, u2 = void 0 === s2 ? I.distance : s2, h2 = t3.ignoreLocation, l2 = void 0 === h2 ? I.ignoreLocation : h2, f2 = r2 / e3.length;
-            if (l2)
-              return f2;
+            if (l2) return f2;
             var d2 = Math.abs(a2 - o2);
             return u2 ? f2 + d2 / u2 : d2 ? 1 : f2;
           }
@@ -369,14 +340,12 @@
                   n2.chunks.push({ pattern: e4, alphabet: W(e4), startIndex: t4 });
                 }, x2 = this.pattern.length;
                 if (x2 > P) {
-                  for (var w2 = 0, L2 = x2 % P, S2 = x2 - L2; w2 < S2; )
-                    b2(this.pattern.substr(w2, P), w2), w2 += P;
+                  for (var w2 = 0, L2 = x2 % P, S2 = x2 - L2; w2 < S2; ) b2(this.pattern.substr(w2, P), w2), w2 += P;
                   if (L2) {
                     var _2 = x2 - P;
                     b2(this.pattern.substr(_2), _2);
                   }
-                } else
-                  b2(this.pattern, 0);
+                } else b2(this.pattern, 0);
               }
             }
             return o(e3, [{ key: "searchIn", value: function(e4) {
@@ -389,31 +358,25 @@
               this.chunks.forEach(function(t4) {
                 var n3 = t4.pattern, i3 = t4.alphabet, o3 = t4.startIndex, y3 = function(e5, t5, n4) {
                   var r3 = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : {}, i4 = r3.location, o4 = void 0 === i4 ? I.location : i4, c3 = r3.distance, a3 = void 0 === c3 ? I.distance : c3, s3 = r3.threshold, u3 = void 0 === s3 ? I.threshold : s3, h3 = r3.findAllMatches, l3 = void 0 === h3 ? I.findAllMatches : h3, f2 = r3.minMatchCharLength, d3 = void 0 === f2 ? I.minMatchCharLength : f2, v3 = r3.includeMatches, g3 = void 0 === v3 ? I.includeMatches : v3, y4 = r3.ignoreLocation, p3 = void 0 === y4 ? I.ignoreLocation : y4;
-                  if (t5.length > P)
-                    throw new Error(w(P));
+                  if (t5.length > P) throw new Error(w(P));
                   for (var m3, k3 = t5.length, M2 = e5.length, b2 = Math.max(0, Math.min(o4, M2)), x2 = u3, L2 = b2, S2 = d3 > 1 || g3, _2 = S2 ? Array(M2) : []; (m3 = e5.indexOf(t5, L2)) > -1; ) {
                     var O2 = R(t5, { currentLocation: m3, expectedLocation: b2, distance: a3, ignoreLocation: p3 });
-                    if (x2 = Math.min(O2, x2), L2 = m3 + k3, S2)
-                      for (var j2 = 0; j2 < k3; )
-                        _2[m3 + j2] = 1, j2 += 1;
+                    if (x2 = Math.min(O2, x2), L2 = m3 + k3, S2) for (var j2 = 0; j2 < k3; ) _2[m3 + j2] = 1, j2 += 1;
                   }
                   L2 = -1;
                   for (var A2 = [], C2 = 1, E2 = k3 + M2, $2 = 1 << k3 - 1, F2 = 0; F2 < k3; F2 += 1) {
-                    for (var W2 = 0, T2 = E2; W2 < T2; )
-                      R(t5, { errors: F2, currentLocation: b2 + T2, expectedLocation: b2, distance: a3, ignoreLocation: p3 }) <= x2 ? W2 = T2 : E2 = T2, T2 = Math.floor((E2 - W2) / 2 + W2);
+                    for (var W2 = 0, T2 = E2; W2 < T2; ) R(t5, { errors: F2, currentLocation: b2 + T2, expectedLocation: b2, distance: a3, ignoreLocation: p3 }) <= x2 ? W2 = T2 : E2 = T2, T2 = Math.floor((E2 - W2) / 2 + W2);
                     E2 = T2;
                     var z2 = Math.max(1, b2 - T2 + 1), D2 = l3 ? M2 : Math.min(b2 + T2, M2) + k3, K2 = Array(D2 + 2);
                     K2[D2 + 1] = (1 << F2) - 1;
                     for (var q2 = D2; q2 >= z2; q2 -= 1) {
                       var B2 = q2 - 1, J2 = n4[e5.charAt(B2)];
                       if (S2 && (_2[B2] = +!!J2), K2[q2] = (K2[q2 + 1] << 1 | 1) & J2, F2 && (K2[q2] |= (A2[q2 + 1] | A2[q2]) << 1 | 1 | A2[q2 + 1]), K2[q2] & $2 && (C2 = R(t5, { errors: F2, currentLocation: B2, expectedLocation: b2, distance: a3, ignoreLocation: p3 })) <= x2) {
-                        if (x2 = C2, (L2 = B2) <= b2)
-                          break;
+                        if (x2 = C2, (L2 = B2) <= b2) break;
                         z2 = Math.max(1, 2 * b2 - L2);
                       }
                     }
-                    if (R(t5, { errors: F2 + 1, currentLocation: b2, expectedLocation: b2, distance: a3, ignoreLocation: p3 }) > x2)
-                      break;
+                    if (R(t5, { errors: F2 + 1, currentLocation: b2, expectedLocation: b2, distance: a3, ignoreLocation: p3 }) > x2) break;
                     A2 = K2;
                   }
                   var U2 = { isMatch: L2 >= 0, score: Math.max(1e-3, C2) };
@@ -562,8 +525,7 @@
               return r(this, n2), t3.call(this, e4);
             }
             return o(n2, [{ key: "search", value: function(e4) {
-              for (var t4, n3 = 0, r2 = [], i2 = this.pattern.length; (t4 = e4.indexOf(this.pattern, n3)) > -1; )
-                n3 = t4 + i2, r2.push([t4, n3 - 1]);
+              for (var t4, n3 = 0, r2 = [], i2 = this.pattern.length; (t4 = e4.indexOf(this.pattern, n3)) > -1; ) n3 = t4 + i2, r2.push([t4, n3 - 1]);
               var o2 = !!r2.length;
               return { isMatch: o2, score: o2 ? 0 : 1, indices: r2 };
             } }], [{ key: "type", get: function() {
@@ -584,14 +546,13 @@
                   var u2 = Q[s2], h2 = u2.isMultiMatch(c2);
                   h2 && (r2.push(new u2(h2, t3)), a2 = true);
                 }
-                if (!a2)
-                  for (s2 = -1; ++s2 < X; ) {
-                    var l2 = Q[s2], f2 = l2.isSingleMatch(c2);
-                    if (f2) {
-                      r2.push(new l2(f2, t3));
-                      break;
-                    }
+                if (!a2) for (s2 = -1; ++s2 < X; ) {
+                  var l2 = Q[s2], f2 = l2.isSingleMatch(c2);
+                  if (f2) {
+                    r2.push(new l2(f2, t3));
+                    break;
                   }
+                }
               }
               return r2;
             });
@@ -603,8 +564,7 @@
             }
             return o(e3, [{ key: "searchIn", value: function(e4) {
               var t3 = this.query;
-              if (!t3)
-                return { isMatch: false, score: 1 };
+              if (!t3) return { isMatch: false, score: 1 };
               var n2 = this.options, r2 = n2.includeMatches;
               e4 = n2.isCaseSensitive ? e4 : e4.toLowerCase();
               for (var i2 = 0, o2 = [], c2 = 0, a2 = 0, s2 = t3.length; a2 < s2; a2 += 1) {
@@ -634,8 +594,7 @@
           function re(e3, t3) {
             for (var n2 = 0, r2 = ne.length; n2 < r2; n2 += 1) {
               var i2 = ne[n2];
-              if (i2.condition(e3, t3))
-                return new i2(e3, t3);
+              if (i2.condition(e3, t3)) return new i2(e3, t3);
             }
             return new T(e3, t3);
           }
@@ -687,8 +646,7 @@
               r(this, e3), this.options = t2(t2({}, I), i2), this.options.useExtendedSearch, this._keyStore = new S(this.options.keys), this.setCollection(n2, o2);
             }
             return o(e3, [{ key: "setCollection", value: function(e4, t3) {
-              if (this._docs = e4, t3 && !(t3 instanceof $))
-                throw new Error("Incorrect 'index' type");
+              if (this._docs = e4, t3 && !(t3 instanceof $)) throw new Error("Incorrect 'index' type");
               this._myIndex = t3 || F(this.options.keys, this._docs, { getFn: this.options.getFn, fieldNormWeight: this.options.fieldNormWeight });
             } }, { key: "add", value: function(e4) {
               k(e4) && (this._docs.push(e4), this._myIndex.add(e4));
@@ -720,12 +678,10 @@
               var t3 = this, n2 = function(e5, t4) {
                 var n3 = (arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : {}).auto, r3 = void 0 === n3 || n3, i3 = function e6(n4) {
                   var i4 = Object.keys(n4), o3 = ue(n4);
-                  if (!o3 && i4.length > 1 && !se(n4))
-                    return e6(le(n4));
+                  if (!o3 && i4.length > 1 && !se(n4)) return e6(le(n4));
                   if (he(n4)) {
                     var c3 = o3 ? n4[ce] : i4[0], a2 = o3 ? n4[ae] : n4[c3];
-                    if (!g(a2))
-                      throw new Error(x(c3));
+                    if (!g(a2)) throw new Error(x(c3));
                     var s2 = { keyId: j(c3), pattern: a2 };
                     return r3 && (s2.searcher = re(a2, t4)), s2;
                   }
@@ -745,10 +701,8 @@
                 }
                 for (var s2 = [], u2 = 0, h2 = n3.children.length; u2 < h2; u2 += 1) {
                   var l2 = e5(n3.children[u2], r3, i3);
-                  if (l2.length)
-                    s2.push.apply(s2, f(l2));
-                  else if (n3.operator === ie)
-                    return [];
+                  if (l2.length) s2.push.apply(s2, f(l2));
+                  else if (n3.operator === ie) return [];
                 }
                 return s2;
               }, i2 = this._myIndex.records, o2 = {}, c2 = [];
@@ -775,17 +729,15 @@
               }), c2;
             } }, { key: "_findMatches", value: function(e4) {
               var t3 = e4.key, n2 = e4.value, r2 = e4.searcher;
-              if (!k(n2))
-                return [];
+              if (!k(n2)) return [];
               var i2 = [];
-              if (v(n2))
-                n2.forEach(function(e5) {
-                  var n3 = e5.v, o3 = e5.i, c3 = e5.n;
-                  if (k(n3)) {
-                    var a3 = r2.searchIn(n3), s3 = a3.isMatch, u3 = a3.score, h3 = a3.indices;
-                    s3 && i2.push({ score: u3, key: t3, value: n3, idx: o3, norm: c3, indices: h3 });
-                  }
-                });
+              if (v(n2)) n2.forEach(function(e5) {
+                var n3 = e5.v, o3 = e5.i, c3 = e5.n;
+                if (k(n3)) {
+                  var a3 = r2.searchIn(n3), s3 = a3.isMatch, u3 = a3.score, h3 = a3.indices;
+                  s3 && i2.push({ score: u3, key: t3, value: n3, idx: o3, norm: c3, indices: h3 });
+                }
+              });
               else {
                 var o2 = n2.v, c2 = n2.n, a2 = r2.searchIn(o2), s2 = a2.isMatch, u2 = a2.score, h2 = a2.indices;
                 s2 && i2.push({ score: u2, key: t3, value: o2, norm: c2, indices: h2 });
@@ -898,10 +850,8 @@
             itemHl.content = highlightContent(item.content, match.indices);
           }
         });
-        if (itemHl.title === void 0)
-          itemHl.title = item.title;
-        if (itemHl.content === void 0)
-          itemHl.content = item.content;
+        if (itemHl.title === void 0) itemHl.title = item.title;
+        if (itemHl.content === void 0) itemHl.content = item.content;
         return itemHl;
       };
       const buildAllItems = () => {

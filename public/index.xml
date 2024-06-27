@@ -8,6 +8,16 @@
     <language>es-419</language>
     <lastBuildDate>Sun, 31 Mar 2024 20:30:32 -0500</lastBuildDate><atom:link href="//localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Minecraft</title>
+      <link>//localhost:1313/ciencia/matematicas/entradas/minecraft/</link>
+      <pubDate>Thu, 27 Jun 2024 14:38:36 -0500</pubDate>
+      
+      <guid>//localhost:1313/ciencia/matematicas/entradas/minecraft/</guid>
+      <description>Guía rápida para empezar a jugar en el servidor Instalación de Java SE Es el lenguaje de programación detrás de Minecraft, por lo que es necesario tenerlo instalado en tu computadora. Particularmente, dado que la versión de Minecraft que usamos en el servidor es la más actualizada, necesitarás la versión más actualizada de Java SE. Puedes descargarla aquí.
+Verás versiones disponibles para Windows, Mac y Linux. Descarga la que corresponda a tu sistema operativo y apenas termine de descargar, haz doble clic en el archivo para instalarlo.</description>
+    </item>
+    
+    <item>
       <title>Tu Cumple</title>
       <link>//localhost:1313/citas/tu-cumple/</link>
       <pubDate>Mon, 29 Apr 2024 10:04:22 -0500</pubDate>

@@ -25,16 +25,16 @@ Ahora que tienes Java instalado, es momento de descargar Minecraft. Si lo tienes
 4. Allí se abrirá el instalador, en general es bastante intuitivo, tienes que elegir la versión de Java que instalaste previamente y seguir las instrucciones.
 
 Al terminar la instalación verás que se abre el lanzador y muestra algo como esto:
-![minecraft-image-1.png](/minecraft-image-1.png)
+![minecraft-image-1.png](https://raw.githubusercontent.com/TomGaleano/nuevo_blog/main/public/minecraft-image-1.png)
 Así, tienes que añadir una nueva instancia, para ello haz clic en el botón ```Add Instance``` y elige la versión ```1.21```. Luego, volverás a la pantalla anterior y tendrás que hacer doble clic sobre la versión que acabas de instalar.
 
 Un nuevo aviso surgirá para informarte que debes iniciar sesión.
 
-![minecraft-image-1.png](/minecraft-image-2.png)
+![minecraft-image-1.png](https://raw.githubusercontent.com/TomGaleano/nuevo_blog/main/public/minecraft-image-2.png)
 
 Dale clic a ```Yes```, entonces verás una pantalla así:
 
-![minecraft-image-1.png](/minecraft-image-3.png)
+![minecraft-image-1.png](https://raw.githubusercontent.com/TomGaleano/nuevo_blog/main/public/minecraft-image-3.png)
 
 Selecciona ```Add Microsoft``` en caso de tener el juego comprado y asociado a tu cuenta de Microsoft. En caso que no tengas el juego comprado, verás la opción de ```Add Locale``` y tendrás que hacer clic en ella para elegir un nombre temporal con el cual jugar.
 
@@ -46,25 +46,25 @@ Hecho esto, verás que puedes abrir el juego y jugarlo sin problemas.
 
 Si no tienes una computadora muy potente, notarás que el juego no anda tan fluido como quisieras. Para solucionar esto, vuelve al lanzador y haz un solo click en la versión que instalaste y dale al botón de ```Edit Instance```.
 
-![minecraft-image-1.png](/minecraft-image-4.png)
+![minecraft-image-1.png](https://raw.githubusercontent.com/TomGaleano/nuevo_blog/main/public/minecraft-image-4.png)
 
 Donde verás que se abre una ventana con varias opciones:
 
-![minecraft-image-1.png](/minecraft-image-5.png)
+![minecraft-image-1.png](https://raw.githubusercontent.com/TomGaleano/nuevo_blog/main/public/minecraft-image-5.png)
 
 Allí, da clic a ```Install Fabric```, este es la base de muchos otros mods, verás una nueva ventana que te pregunta qué versión instalar, debes elegir la versión más reciente y darle a ```Ok```.
 
 Ahora, sin cerrar el lanzador descarga los mods [sodium](https://www.curseforge.com/minecraft/mc-mods/sodium) y [lithium](https://www.curseforge.com/minecraft/mc-mods/lithium), ten presente al descargar especificar la versión del juego así como que el mod loader es Fabric, así:
 
-![minecraft-image-1.png](/minecraft-image-6.png)
+![minecraft-image-1.png](https://raw.githubusercontent.com/TomGaleano/nuevo_blog/main/public/minecraft-image-6.png)
 
 Una vez descargados ambos archivos ```.jar```, vuelve al lanzador y da clic en ```Loader mods```,
 
-![minecraft-image-1.png](/minecraft-image-7.png)
+![minecraft-image-1.png](https://raw.githubusercontent.com/TomGaleano/nuevo_blog/main/public/minecraft-image-7.png)
 
 Aquí, da clic en ```Add``` y selecciona los archivos que descargaste previamente.
 
-![minecraft-image-1.png](/minecraft-image-8.png)
+![minecraft-image-1.png](https://raw.githubusercontent.com/TomGaleano/nuevo_blog/main/public/minecraft-image-8.png)
 
 Hecho esto, cierra la ventana y da clic en ```Launch```.
 

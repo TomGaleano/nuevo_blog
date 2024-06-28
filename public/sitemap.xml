@@ -2,7 +2,19 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>//localhost:1313/citas/peliculas/intensamente-2/</loc>
+    <lastmod>2024-06-28T12:09:08-05:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/tags/juegos/</loc>
+    <lastmod>2024-06-27T14:38:36-05:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/tags/minecraft/</loc>
+    <lastmod>2024-06-27T14:38:36-05:00</lastmod>
+  </url><url>
     <loc>//localhost:1313/ciencia/matematicas/entradas/minecraft/</loc>
+    <lastmod>2024-06-27T14:38:36-05:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/tags/</loc>
     <lastmod>2024-06-27T14:38:36-05:00</lastmod>
   </url><url>
     <loc>//localhost:1313/citas/tu-cumple/</loc>
@@ -26,6 +38,9 @@
     <loc>//localhost:1313/matematicas/</loc>
     <lastmod>2024-03-31T19:07:54-05:00</lastmod>
   </url><url>
+    <loc>//localhost:1313/peliculas/</loc>
+    <lastmod>2024-03-31T19:07:54-05:00</lastmod>
+  </url><url>
     <loc>//localhost:1313/quimica/</loc>
     <lastmod>2024-03-31T19:07:54-05:00</lastmod>
   </url><url>
@@ -39,7 +54,5 @@
     <lastmod>2024-03-31T17:33:52-05:00</lastmod>
   </url><url>
     <loc>//localhost:1313/categories/</loc>
-  </url><url>
-    <loc>//localhost:1313/tags/</loc>
   </url>
 </urlset>

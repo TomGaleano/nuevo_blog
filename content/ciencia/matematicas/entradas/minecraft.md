@@ -4,6 +4,7 @@ date = 2024-06-27T14:38:36-05:00
 draft = false
 bookcase_cover_src = 'covers/minecraft.png'
 bookcase_cover_src_dark = 'covers/minecraft-b.png'
+tags = ['juegos', 'minecraft']
 +++
 
 # Guía rápida para empezar a jugar en el servidor

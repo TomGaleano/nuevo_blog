@@ -5,6 +5,25 @@
     <link>//localhost:1313/tags/</link>
     <description>Recent content in Tags on Diario de Lau y Tomás</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>es-419</language><atom:link href="//localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    <language>es-419</language>
+    <lastBuildDate>Thu, 27 Jun 2024 14:38:36 -0500</lastBuildDate><atom:link href="//localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Juegos</title>
+      <link>//localhost:1313/tags/juegos/</link>
+      <pubDate>Thu, 27 Jun 2024 14:38:36 -0500</pubDate>
+      
+      <guid>//localhost:1313/tags/juegos/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Minecraft</title>
+      <link>//localhost:1313/tags/minecraft/</link>
+      <pubDate>Thu, 27 Jun 2024 14:38:36 -0500</pubDate>
+      
+      <guid>//localhost:1313/tags/minecraft/</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>

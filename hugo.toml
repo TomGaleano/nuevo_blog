@@ -28,3 +28,7 @@ identifier = "citas"
 name = "citas"
 url = "/citas/"
 weight = 80
+
+[outputs]
+home = ["HTML", "RSS", "JSON"]
+

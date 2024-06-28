@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Juegos on Diario de Lau y Tomás</title>
+    <link>//localhost:1313/tags/juegos/</link>
+    <description>Recent content in Juegos on Diario de Lau y Tomás</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>es-419</language>
+    <lastBuildDate>Thu, 27 Jun 2024 14:38:36 -0500</lastBuildDate><atom:link href="//localhost:1313/tags/juegos/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Minecraft</title>
+      <link>//localhost:1313/ciencia/matematicas/entradas/minecraft/</link>
+      <pubDate>Thu, 27 Jun 2024 14:38:36 -0500</pubDate>
+      
+      <guid>//localhost:1313/ciencia/matematicas/entradas/minecraft/</guid>
+      <description>Guía rápida para empezar a jugar en el servidor Instalación de Java SE Es el lenguaje de programación detrás de Minecraft, por lo que es necesario tenerlo instalado en tu computadora. Particularmente, dado que la versión de Minecraft que usamos en el servidor es la más actualizada, necesitarás la versión más actualizada de Java SE. Puedes descargarla aquí.
+Verás versiones disponibles para Windows, Mac y Linux. Descarga la que corresponda a tu sistema operativo y apenas termine de descargar, haz doble clic en el archivo para instalarlo.</description>
+    </item>
+    
+  </channel>
+</rss>

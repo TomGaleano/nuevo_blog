@@ -22,7 +22,7 @@ Ahora tienes permiso de destapar el regalo, **¡ten cuidado, es algo delicado!**
 
 Adentro encontrarás una cámara de film y este va a ser la herramienta principal de nuestra aventura. Veamos una guía rápida de cómo usarla:
 
-### Recomendaciones para el Éxito Fotográfico (Y la Supervivencia de tu Cámara):
+### Guía sobre tu regalo:
 
 * **¡A plena luz, valiente guerrera de la lente!** Esta cámara ama el sol más que Nashira. En interiores oscuros, prepárate para fotos... artísticamente borrosas (léase: no se va a ver nada).
 * **Distancia prudente, joven científica.** Esta cámara está preparada para tomas generales a una distancia de un metro o más d elos protagonistas de tus fotos. Trata de mantener al menos un brazo de distancia con lo que sea que estés fotografeando.
@@ -31,7 +31,7 @@ Adentro encontrarás una cámara de film y este va a ser la herramienta principa
 
 Perfecto, ya estás lista para tomar las fotos que quieras. Te recomiendo aprender lo básico con este video mi amor:
 
-<iframe width="1183" height="665" src="https://www.youtube.com/embed/YZfX6_Y5eNw" title="How to use Kodak Fun Saver Disposable Camera | Simple Beginners Guide, My first roll-film 🎞 코닥 펀세이버" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+{{< youtube YZfX6_Y5eNw >}}
 
 ## Nuestra aventura:
 

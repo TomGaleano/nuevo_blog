@@ -18,7 +18,7 @@ Tomás
 
 Ahora tienes permiso de destapar el regalo, **¡ten cuidado, es algo delicado!**...
 
-![kodak+hearts.jpg](https://github.com/TomGaleano/nuevo_blog/blob/main/static/kodak+hearts.jpg)
+![kodak+hearts.jpg](https://raw.githubusercontent.com/TomGaleano/nuevo_blog/main/public/kodak_hearts.jpg)
 
 Adentro encontrarás una cámara de film y este va a ser la herramienta principal de nuestra aventura. Veamos una guía rápida de cómo usarla:
 
